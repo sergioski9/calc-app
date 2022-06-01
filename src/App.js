@@ -1,11 +1,11 @@
 /* eslint no-eval: 0 */
 import React, { useState } from 'react'
-import words from 'lodash.words';
-import Result from './components/Result';
-import Functions from './components/Functions';
-import Numbers from './components/Numbers';
-import MathOperations from './components/MathOperations';
-import './App.css';
+import words from 'lodash.words'
+import Result from './components/Result'
+import Functions from './components/Functions'
+import Numbers from './components/Numbers'
+import MathOperations from './components/MathOperations'
+import './App.css'
 
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
   const value = items.length > 0 ? items[items.length - 1] : 0;
 
   return (
-    <main className="react-calculator">
+    <main className='react-calculator'>
       <Result value={ value } />
       <Numbers onClickNumber={number => setStack(`${stack}${number}`)} />
       <Functions
