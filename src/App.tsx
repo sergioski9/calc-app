@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <main className='react-calculator'>
-      <Result value={ value } />
+      <Result value={value.toString()} />
       <Numbers onClickNumber={number => setStack(`${stack}${number}`)} />
       <Functions
         onContentClear={() => setStack('')}
