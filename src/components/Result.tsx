@@ -1,7 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { FC } from 'react'
 
-const Result = ({ value }) => {
+type Prop = {
+  value: string
+}
+
+const Result: FC<Prop> = ({ value }) => {
+
   return (
     <div
       className='result' >
@@ -9,11 +13,7 @@ const Result = ({ value }) => {
         { value }
       </span>
     </div>
-  );
-};
-
-Result.propTypes = {
-  value: PropTypes.string.isRequired
+  )
 }
 
 Result.defaultProps = {
